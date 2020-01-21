@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="us-EN">
+	<head>
+		<meta charset="utf-8">
+		<title>Gmail.com</title>
+		<meta name="viewport" content="width=device-width , initial-scale=1">
+		<link rel="icon" href="gmail-logo.png" alt="gmail-logo" title="gmail.com">
+		<!--flex-wrap:wrap;-->
+		<style>
+			* {
+				font-family:sans-serif;
+				box-sizing:border-box;
+				outline-style:none;
+			}
+			.main {
+				border:6px solid #FE282B;
+				width:60%;
+				height:800px;
+				position:relative;
+				margin:120px auto;
+				display:flex;
+			}
+			.heading1 {
+				color:#FE282B;
+				font-size:50px;
+				text-decoration:underline;
+				margin:70px 485px;
+				word-spacing:20px;
+				letter-spacing:7px;
+				cursor:pointer;
+			}
+			.heading1:hover {
+				color:#3CFE23;
+			}
+			.header {
+				border-bottom:6px solid #FE282B;
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:14%;
+				background-color:#FE282B;
+				display:flex;
+			}
+			.footer {
+				border-top:6px solid #FE282B;
+				position:absolute;
+				top:86%;
+				left:0;
+				width:100%;
+				height:14%;
+				background-color:#FE282B;
+				display:flex;
+			}
+			.heading2 {
+				color:#FFFFFF;
+				margin-left:30px;
+				margin-top:40px;
+				word-spacing:14px;
+				cursor:pointer;
+				text-decoration:underline;
+			}
+			.heading2:hover {
+				color:#3CFE23;
+			}
+			.section {
+				border:1px solid 0;
+				position:absolute;
+				top:14%;
+				left:0;
+				height:72%;
+				width:100%;
+				display:flex;
+				animation-name:animation1;
+				animation-direction:normal;
+				animation-delay:0;
+				animation-duration:9s;
+				animation-play-state:running;
+				animation-iteration-count:infinite;
+			}
+			@keyframes animation1 {
+				0% {background-color:#5BE1FF}
+				25% {background-color:#42A3B9}
+				50% {background-color:#5BE1FF}
+				75% {background-color:#42A3B9}
+				100% {background-color:#5BE1FF}
+			}
+			.mini-contents {
+				border:1px solid 0;
+				display:flex;
+				flex-direction:column;
+				position:absolute;
+				width:100%;
+				left:0;
+				top:0;
+				height:12.5%;
+			}
+			.mini-contents2 {
+				border:1px solid 0;
+				width:30%;
+				height:100%;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			.mini-contents3 {
+				border:1px solid 0;
+				width:70%;
+				height:100%;
+				position:absolute;
+				top:0;
+				left:30%;
+			}
+			.m2 {
+				top:12.5%;
+			}
+			.m3 {
+				top:25%;
+			}
+			.m4 {
+				top:37.5%;
+			}
+			.m5 {
+				top:50%;
+			}
+			.m6 {
+				top:75%;
+			}
+			.m7 {
+				top:87.5%;
+			}
+			.m_another1 {
+				height:200%;
+			}
+			.m_another2 {
+				height:200%;
+			}
+			.pumadiv {
+				border:1px solid 0;
+				position:absolute;
+				top:0;
+				left:50%;
+				height:100%;
+				width:20%;
+				display:flex;
+				cursor:pointer;
+			}
+			.puma {
+				height:100%;
+				width:100%;
+				flex:1;
+			}
+			.no-line {
+				text-decoration:none;
+			}
+			.sign {
+				position:absolute;
+				top:15%;
+				left:25%;
+				height:70%;
+				width:15%;
+				border:1px solid #FC2828;
+				cursor:pointer;
+				display:flex;
+				z-index:0;
+			}
+			.no-line2 {
+				text-decoration:none;
+				color:#FC2828;
+				font-size:17px;
+			}
+			.no-line2:hover {
+				color:#3CFE23;
+			}
+			.no-line2:active {
+				color:#FC2828;
+			}
+			.sign:active {
+				border:5px solid #961818;
+			}
+			.reset {
+				position:absolute;
+				top:15%;
+				right:25%;
+				height:70%;
+				width:15%;
+				border:1px solid #FC2828;
+				cursor:pointer;
+				display:flex;
+				z-index:0;
+			}
+			.reset:active {
+				border:5px solid #961818;
+			}
+			.text_link {
+				font-size:18px;
+				color:#FC2828;
+				margin:23% auto;
+			}
+			.text_link:hover {
+				color:#3CFE23;
+			}
+			.input_text {
+				color:#000000;
+				font-size:22px;
+				margin:22px 20px;
+				cursor:pointer;
+				word-spacing:4px;
+			}
+			.input_text:hover {
+				color:#FC2828;
+			}
+			.input_text2 {
+				margin:17px 20px;
+			}
+			.sign::before {
+				content:"";
+				z-index:-1;
+				transition:all 1.5s ease;
+				position:absolute;
+				background-color:#C1C3C1;
+				width:0;
+				height:100%;
+				top:0;
+				bottom:0;
+				left:0;
+			}
+			.sign:hover::before {
+				width:100%;
+				right:0;
+			}
+			.reset::before {
+				content:"";
+				z-index:-1;
+				transition:all 1.5s ease;
+				position:absolute;
+				background-color:#C1C3C1;
+				width:0;
+				height:100%;
+				top:0;
+				bottom:0;
+				left:0;
+			}
+			.reset:hover::before {
+				width:100%;
+				right:0;
+			}
+			.input {
+				position:absolute;
+				top:15%;
+				left:5%;
+				width:90%;
+				height:70%;
+				border:2px solid #FC2828;
+				border-radius:13px;
+				color:#000000;
+				font-size:17px;
+				letter-spacing:5px;
+				text-indent:21px;
+			}
+			.inputs {
+				position:absolute;
+				top:15%;
+				height:70%;
+				left:5%;
+				width:27%;
+				border:2px solid #FC2828;
+				border-radius:13px;
+				color:#000000;
+				font-size:17px;
+				letter-spacing:5px;
+				text-indent:21px;
+			}
+			.inputs2 {
+				left:36.5%;
+			}
+			.inputs3 {
+				left:68%;
+			}
+			.gender {
+				left:5%;
+				top:36%;
+				position:absolute;
+			}
+			.gender2 {
+				left:36.5%;
+			}
+			.gender3 {
+				left:68%;
+			}
+			.gender_text1 {
+				left:10%;
+				top:15%;
+				position:absolute;
+			}
+			.gender_text2 {
+				left:41.5%;
+				top:15%;
+				position:absolute;
+			}
+			.gender_text3 {
+				left:73%;
+				top:15%;
+				position:absolute;
+			}
+			.select1 {
+				top:5%;
+				left:5%;
+				width:90%;
+				height:34%;
+				position:absolute;
+				border:2px solid #FC2828;
+				border-radius:13px;
+				text-indent:21px;
+				letter-spacing:6px;
+				font-size:17px;
+			}
+
+
+
+			@media screen and (max-width:1098px) {
+				.heading2 {
+					font-size:25px;
+				}
+			}
+			@media screen and (min-width:1001px) {
+				.main {
+					position:relative;
+					left:0.5%;
+				}
+			}
+			@media screen and (max-width:950px) {
+				.pumadiv {
+					left:70%;
+				}
+				.input {
+					width:60%;
+					font-size:13px;
+					text-indent:5px;
+					letter-spacing:0px;
+				}
+				.select1 {
+					width:60%;
+					font-size:13px;
+					letter-spacing:0px;
+					text-indent:5px;
+				}
+				.inputs {
+					width:15%;
+					text-indent:5px;
+					letter-spacing:0px;
+					font-size:12px;
+				}
+				.gender_text1 {
+					font-size:13px;
+				}
+				.gender_text2 {
+					font-size:13px;
+				}
+				.gender_text3 {
+					font-size:13px;
+				}
+				.input_text {
+					font-size:15px;
+				}
+			}
+			@media screen and (max-width:768px) {
+				.gender_text2 {
+					left:43%;
+				}
+				.gender_text3 {
+					left:75%;
+				}
+				.reset {
+					top:15%;
+					right:20%;
+				}
+				.sign {
+					left:20%;
+				}
+				.heading1 {
+					left:-55%;
+					top:-20%;
+				}
+				.mini-contents {
+					height:12.5%;
+					flex-wrap:wrap;
+				}
+				.mini-contents3 {
+					position:absolute;
+					height:50%;
+					width:100%;
+					left:0;
+					top:50%;
+				}
+				.input {
+					left:20%;
+				}
+				.mini-contents2 {
+					position:absolute;
+					height:50%;
+					width:100%;
+					left:0;
+					top:0;
+				}
+				.m2 {
+					top:12.5%;
+				}
+				.input_text {
+					margin:10px 160px;
+				}
+				.m_another2 {
+					height:100%;
+				}
+				.input_text2 {
+					margin:10px 160px;
+				}
+				.select1 {
+					left:20%;
+				}
+				.inputs {
+					height:80%;
+				}
+				.heading2 {
+					margin-left:1px;
+				}
+				.pumadiv {
+					width:25%;
+					left:74%;
+				}
+				.different {
+					font-size:15px;
+					margin:5px 140px;
+				}
+			}
+			@media screen and (max-width:758px) {
+				.input_text {
+					margin-top:5px;
+					margin-left:160px;
+				}
+				.different {
+					font-size:15px;
+					margin-top:-15px;
+					margin-left:160px;
+				}
+				.different2 {
+					font-size:15px;
+					margin-top:10px;
+					margin-left:160px;
+				}
+			}
+			@media screen and (max-width:668px) {
+				.different {
+					font-size:15px;
+					margin-top:-40px;
+					margin-left:140px;
+				}
+				.different2 {
+					font-size:15px;
+					margin-top:6px;
+					margin-left:140px;
+				}
+				.select1 {
+					left: 20%;
+    				top: 25%;
+    			}
+    			.inputs {
+    				top:-25%;
+    			}
+    			.input {
+    				top:25%;
+    			}
+    			.text_link {
+    				font-size:15px;
+    			}
+    			.input_text {
+    				margin-left:140px;
+    			}
+			}
+			@media screen and (max-width:606px) {
+				.main {
+					width:75%;
+					left:0.5%;
+				}
+			}
+			@media screen and (max-width:516px) {
+				.main {
+					width:90%;
+					left:0.5%;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<h1 class="heading2">List For Register</h1>
+				<div class="pumadiv"><a href="file:///C:/Users/windows/Desktop/Puma/index2.html" class="no-line"><img src="pumatitlelogo.jpg" alt="pumatitlelogo" class="puma" title="puma.com"></a></div>
+			</div>
+			<div class="section">
+				<div class="mini-contents">
+					<div class="mini-contents2"><p class="input_text">Your Name:</p></div>
+					<div class="mini-contents3"><input type="text" class="input" name="firstname" placeholder="Name..."></div>
+				</div>
+				<div class="mini-contents m2">
+					<div class="mini-contents2"><p class="input_text">Your Surname:</p></div>
+					<div class="mini-contents3"><input type="text" class="input" name="lastname" placeholder="Surname..."></div>
+				</div>
+				<div class="mini-contents m3">
+					<div class="mini-contents2"><p class="input_text">Your Mobile:</p></div>
+					<div class="mini-contents3"><input type="text" class="input" name="mobile" placeholder="+374(AM)..."></div>
+				</div>
+				<div class="mini-contents m4">
+					<div class="mini-contents2"><p class="input_text">Your E-mail:</p></div>
+					<div class="mini-contents3"><input type="text" class="input" name="mail" placeholder="Mail..."></div>
+				</div>
+				<div class="mini-contents m5">
+					<div class="mini-contents2 m_another1"><p class="input_text input_text2 country2">Your Country:</p></div>
+					<div class="mini-contents3 m_another2">
+						<select class="select1" size="1" name="select">
+							<option value="Yerevan">Yerevan</option>
+							<option value="Ottawa">Ottawa</option>
+							<option value="Moscow">Moscow</option>
+							<option value="Vashington">Vashington</option>
+						</select>
+					</div>
+				</div>
+				<div class="mini-contents m6">
+					<div class="mini-contents2"><p class="input_text different">Your Date of Birth:</div>
+					<div class="mini-contents3"><input type="text" class="inputs" name="day" placeholder="Day...">
+						<input type="text" class="inputs inputs2" name="month" placeholder="Month...">
+						<input type="text" class="inputs inputs3" name="year" placeholder="Year...">
+					</div>
+				</div>
+				<div class="mini-contents m7">
+					<div class="mini-contents2"><p class="input_text different2">Your Gender:</p></div>
+					<div class="mini-contents3"><input type="radio" name="radiobutton1" class="gender" value="male" checked><p class="gender_text1">Male</p>
+						<input type="radio" name="radiobutton2" class="gender gender2" value="female"><p class="gender_text2">Female</p>
+						<input type="radio" name="radiobutton3" class="gender gender3" value="other"><p class="gender_text3">Other</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<a href="#" class="no-line2"><button type="submit" name="button1" class="sign"><p class="text_link">Sign up</p></button></a>
+				<a href="#" class="no-line2"><button type="reset" name="button2" class="reset"><p class="text_link">Reset</p></button></a>
+			</div>
+		</div>
+	</body>
+</html>
