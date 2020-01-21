@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body {
+    padding-top:70px;
+    background-color:rgb(204, 197, 197);
+}
+.error-text {
+    font-size:30px;
+    color:rgb(255,0,0);
+    margin-left:50px;
+    margin-top:100px;
+}
+.main {
+    max-width:650px;
+    min-height:650px;
+    margin-left:400px;;
+    margin-bottom:50px;
+    background-color:rgb(115,197,67);
+    display:flex;
+    flex-direction:column;
+    animation-name:animation1;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+    border-radius:30px;
+}
+@keyframes animation1 {
+    0% {background-color:rgb(115,197,67);}
+    25% {background-color:rgb(88,238,205);}
+    50% {background-color:rgb(115,197,67);}
+    75% {background-color:rgb(88,238,205);}
+    100% {background-color:rgb(115,197,67);}
+}
+.main_border {
+    max-width:500px;
+    min-height:500px;
+    margin-left:75px;;
+    margin-bottom:75px;
+    background-color:rgb(138, 233, 240);
+    display:flex;
+    flex-direction:column;
+    animation-name:animation2;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+}
+@keyframes animation2 {
+    0% {background-color:rgb(138, 233, 240);}
+    25% {background-color:rgb(14,145,221);}
+    50% {background-color:rgb(237, 240, 99);}
+    75% {background-color:rgb(14,145,221);}
+    100% {background-color:rgb(138, 233, 240);}
+}
+.title {
+    color:#FFF;
+    font-weight:600;
+    font-size:40px;
+    margin:0 auto;
+    padding-top:15px;
+    padding-bottom:25px;
+    cursor:pointer;
+    transition:color 1s ease;
+}
+.title:hover {
+    color:rgb(204, 197, 197);
+}
+.mini_divs {
+    width:500px;
+    height:175px;
+    margin-left:0;
+    margin-bottom:0;
+    display:flex;
+    flex-direction:row;
+}
+.second {
+    margin-bottom:0;
+    height:150px;
+}
+.third {
+    height:175px;
+}
+.square_divs {
+    background-color:#FFF;
+    width:100px;
+    margin-left:50px;
+    height:100px;
+    cursor:pointer;
+    font-size:90px;
+    text-align:center;
+    color:rgb(241, 43, 43);
+}
+.m-t-1 {
+    margin-top:50px;
+}
+.m-t-2 {
+    margin-top:26px;
+}
+.m-t-3 {
+    margin-top:27px;
+}
