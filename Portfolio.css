@@ -505,6 +505,9 @@ body {
         width:70%;
         height:80%;
     }
+    .anim_img {
+        display:none;
+    }
 }
 @media screen and (max-width:767px) {
     .example {
@@ -536,13 +539,17 @@ body {
 }
 @media screen and (max-width:530px) {
     .photo-2 {
-        margin-top:52%;
+        margin-top:30%;
         width:90%;
     }
 }
 @media screen and (max-width:500px) {
     .portfolioTitle {
         margin-left:18%;
+    }
+    .photo-2 {
+        margin-top:30%;
+        width:90%;
     }
 }
 .date {
@@ -580,7 +587,112 @@ body {
 .wrapper {
     max-width:100%;
 }
-
-
-
+@media screen and (max-width:414px) {
+    .exp_text {
+        font-size:14px;
+        margin-left:0;
+    }
+    .example {
+        width:350px;
+        height:350px;
+    }
+    .photo-2 {
+        margin-top:40%;
+    }
+    .exp_title {
+        margin-left:0;
+    }
+    .portfolioTitle {
+        margin-left:10%;
+    }
+    .title2 {
+        margin-left:60px;
+    }
+}
+@media screen and (max-width:375px) {
+    .exp_text {
+        font-size:12px;
+        margin-left:0;
+    }
+    .example {
+        width:350px;
+        height:350px;
+    }
+    .photo-2 {
+        margin-top:40%;
+    }
+    .exp_title {
+        margin-left:-11px;
+    }
+    .portfolioTitle {
+        margin-left:10%;
+    }
+    .title2 {
+        margin-left:60px;
+    }
+}
+@media screen and (max-width:360px) {
+    .exp_text {
+        font-size:12px;
+        margin-left:0;
+    }
+    .example {
+        width:320px;
+        height:320px;
+    }
+    .photo-2 {
+        margin-top:40%;
+    }
+    .exp_title {
+        margin-left:-11px;
+    }
+    .portfolioTitle {
+        margin-left:5%;
+    }
+    .title2 {
+        margin-left:35px;
+    }
+}
+@media screen and (max-width:320px) {
+    .exp_text {
+        font-size:11px;
+        margin-left:0;
+    }
+    .example {
+        width:285px;
+        height:285px;
+    }
+    .photo-2 {
+        margin-top:40%;
+    }
+    .exp_title {
+        margin-left:-45px;
+    }
+    .portfolioTitle {
+        margin-left:-9%;
+    }
+    .title2 {
+        margin-left:25px;
+    }
+    .about_text {
+        font-size:15px;
+        text-align:left;
+    }
+    .scroll {
+        margin-left:-25px;
+    }
+    .date {
+        font-size:18px;
+    }
+}
+@media screen and (max-width:1090px) {
+    .forMedia {
+        font-size:15px;
+    }
+}
+@media screen and (max-width:991px) {
+    .forMedia {
+        font-size:19px;
+    }
+}
 
