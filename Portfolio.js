@@ -69,9 +69,8 @@ remove.addEventListener("click",() => {
     photo2.style.display="none";
 });
 window.onclick = function(event) {
-    if (event.target == modalPhoto) {
+    if (event.target === modalPhoto) {
         modalPhoto.style.display="none";
         photo2.style.display="none";
     }
 };
- 
