@@ -413,23 +413,24 @@ body {
 .skills_text {
     color:#fff;
     font-size:18px;
+    font-family: "Roboto", sans-serif;
     transition:color 1s ease;
 }
 .skills_text:hover {
     color:#000;
 }
 .anim_img {
-	position:absolute;
-	left:4%;
-	top:20%;
-	height:50%;
-	width:100px;
-	cursor:pointer;
-	animation-name:animation-logo;
-	animation-direction:normal;
-	animation-duration:3s;
-	animation-iteration-count:infinite;
-	animation-play-state:running;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    height: 60%;
+    width: 140px;
+    cursor: pointer;
+    animation-name: animation-logo;
+    animation-direction: normal;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 @keyframes animation-logo {
 	0% {transform:rotateZ(0deg);position:absolute;left:4%;top:20%;}
