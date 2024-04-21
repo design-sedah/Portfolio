@@ -97,6 +97,10 @@ nav {
     margin-right: 70px;
 }
 
+.about_title:hover {
+  text-decoration: underline;
+}
+
 .scroll {
     overflow:scroll;
     width:350px;
